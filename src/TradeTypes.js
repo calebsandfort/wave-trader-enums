@@ -10,7 +10,7 @@ import {Enum} from './enumify';
 //     [EnumDisplay("Bull Put Spread")]
 // BullPutSpread
 
-export class TradingTypes extends Enum {}
-TradingTypes.initEnum([['None', 'None'], ['LongFuture', 'Long Future'], ['ShortFuture', 'Short Future'], ['CoveredCall', 'Covered Call'], ['BullPutSpread', 'Bull Put Spread']]);
+export class TradeTypes extends Enum {}
+TradeTypes.initEnum([['None', 'None'], ['LongFuture', 'Long Future'], ['ShortFuture', 'Short Future'], ['CoveredCall', 'Covered Call'], ['BullPutSpread', 'Bull Put Spread']]);
 
-export default TradingTypes;
+export default TradeTypes;
