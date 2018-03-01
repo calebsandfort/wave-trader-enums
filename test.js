@@ -1,7 +1,7 @@
 let chai = require('chai');
 let should = chai.should();
 const PerformanceCycleTypes = require("./lib").PerformanceCycleTypes;
-const TradingTypes = require("./lib").TradingTypes;
+const TradeTypes = require("./lib").TradeTypes;
 
 describe('Enums', () => {
 
@@ -14,12 +14,12 @@ describe('Enums', () => {
         });
     });
 
-    describe('TradingTypes - enumOrdinalOf', () => {
-        it('it should get the TradingTypes for the specified ordinal', () => {
-            const pct = TradingTypes.enumOrdinalOf(1);
+    describe('TradeTypes - enumOrdinalOf', () => {
+        it('it should get the TradeTypes for the specified ordinal', () => {
+            const pct = TradeTypes.enumOrdinalOf(1);
             pct.ordinal.should.be.eql(1);
-            pct.name.should.be.eql("LongFuture");
-            pct.display.should.be.eql("Long Future");
+            pct.name.should.be.eql("Long");
+            pct.display.should.be.eql("Long");
         });
     });
 });
